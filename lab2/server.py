@@ -59,7 +59,7 @@ class Server(object):
                 waiting = False
                 res = "STOPPING"
             elif data[:4] == "HELO":
-                res = data+"IP:"+self._host+"\nPort:"+str(self._port)+"\nStudentID:12311518\n"
+                res = data+"IP:"+self._host+"\nPort:"+str(self._port)+"\nStudentID:f512ce082b10d3fad0900aed0845ebe073c019e15e74b8ae0878ae5fdd794f71\n"
             print("thread="+str(cid)+", data="+data)
             conn.send(res)
             conn.close()
